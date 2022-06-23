@@ -24,9 +24,7 @@ def predict():
 
     print( location, bhk, bath ,sqft)
     
-    input = pd.DataFrame([[location, sqft, bath, bhk]], columns = ['location', 'total_sqft', 'bath' ,'bhk'])
-    prediction = pipe.predict(input)[0] * 1e5
-    return str(np.round(prediction,2))
+    return "Hellow World"
     
 if __name__ == "__main__":
     app.run(debug=True)
